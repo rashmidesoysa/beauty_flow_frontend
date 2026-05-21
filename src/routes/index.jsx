@@ -21,6 +21,8 @@ import Dashboard from "../features/admin/dashboard/Dashboard";
 import CategoriesList from "../features/admin/categories/CategoriesList";
 import SubCategoriesList from "../features/admin/subcategories/SubCategoriesList";
 import BrandsList from "../features/admin/brands/BrandsList";
+import SuppliersList from "../features/admin/suppliers/SuppliersList";
+import ItemsList from "../features/admin/items/ItemsList";
 
 export const router = createBrowserRouter([
   // Customer Routes
@@ -61,6 +63,8 @@ export const router = createBrowserRouter([
       { path: "products/categories", element: <CategoriesList /> },
       { path: "products/subcategories", element: <SubCategoriesList /> },
       { path: "products/brands", element: <BrandsList /> },
+      { path: "suppliers", element: <SuppliersList /> },
+      { path: "items", element: <ItemsList /> },
     ],
   },
 ]);
