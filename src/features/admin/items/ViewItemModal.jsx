@@ -137,7 +137,7 @@ export default function ViewItemModal({ item, isOpen, onClose, onEdit }) {
                   <FaDollarSign size={10} /> Cost Price
                 </p>
                 <p className="font-medium text-gray-800">
-                  ${parseFloat(item.cost_price || 0).toFixed(2)}
+                  LKR{parseFloat(item.cost_price || 0).toFixed(2)}
                 </p>
               </div>
 
@@ -146,7 +146,7 @@ export default function ViewItemModal({ item, isOpen, onClose, onEdit }) {
                   <FaDollarSign size={10} /> List Price
                 </p>
                 <p className="font-medium text-gray-800">
-                  ${parseFloat(item.list_price || 0).toFixed(2)}
+                  LKR{parseFloat(item.list_price || 0).toFixed(2)}
                 </p>
               </div>
 
@@ -155,7 +155,7 @@ export default function ViewItemModal({ item, isOpen, onClose, onEdit }) {
                   <FaDollarSign size={10} /> Average Price
                 </p>
                 <p className="font-medium text-gray-800">
-                  ${parseFloat(item.avg_price || 0).toFixed(2)}
+                  LKR{parseFloat(item.avg_price || 0).toFixed(2)}
                 </p>
               </div>
 
