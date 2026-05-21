@@ -205,7 +205,7 @@ export default function ItemsList() {
                           {item.category_name}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-700">
-                          ${parseFloat(item.list_price || 0).toFixed(2)}
+                          LKR{parseFloat(item.list_price || 0).toFixed(2)}
                         </td>
                         <td className="px-6 py-4 whitespace-nowrap">
                           <button
