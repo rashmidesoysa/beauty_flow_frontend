@@ -128,6 +128,17 @@ export default function AdminLogin() {
             )}
           </button>
         </form>
+        <div className="mt-6 text-center">
+          <p className="text-gray-600">
+            Create New Account?{" "}
+            <Link
+              to="/admin/register"
+              className="text-pink-600 hover:underline font-medium"
+            >
+              Register here
+            </Link>
+          </p>
+        </div>
       </div>
     </div>
   );
