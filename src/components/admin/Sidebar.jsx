@@ -36,6 +36,7 @@ const menuItems = [
     icon: FaBox,
     submenu: [
       { path: "/admin/products", name: "All Products", icon: FaTags },
+      { path: "/admin/items", name: "Items", icon: FaBox },
       {
         path: "/admin/products/categories",
         name: "Categories",
