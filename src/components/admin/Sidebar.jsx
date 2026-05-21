@@ -18,6 +18,7 @@ import {
   FaGift,
   FaCog,
   FaSignOutAlt,
+  FaFolder,
 } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../../context/AuthContext";
@@ -39,6 +40,11 @@ const menuItems = [
         path: "/admin/products/categories",
         name: "Categories",
         icon: FaPalette,
+      },
+      {
+        path: "/admin/products/subcategories",
+        name: "Subcategories",
+        icon: FaFolder,
       },
       { path: "/admin/products/brands", name: "Brands", icon: FaStar },
       {
