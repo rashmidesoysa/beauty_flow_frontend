@@ -3,7 +3,7 @@ import { FaTrash, FaShoppingBag } from 'react-icons/fa'
 
 export default function Cart() {
   const cartItems = [
-    { id: 1, name: 'Luxury Lipstick Set', price: 49.99, quantity: 2, image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa' },
+    { id: 1, name: 'Luxury Lipstick Set', price:49.99, quantity: 2, image: 'https://images.unsplash.com/photo-1586495777744-4413f21062fa' },
     { id: 2, name: 'Organic Face Cream', price: 39.99, quantity: 1, image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03' },
   ]
 
@@ -49,7 +49,7 @@ export default function Cart() {
                       </div>
                     </div>
                     <div className="md:col-span-2 text-center">
-                      <span className="text-gray-600">${item.price}</span>
+                      <span className="text-gray-600">{item.price}</span>
                     </div>
                     <div className="md:col-span-2">
                       <div className="flex items-center justify-center gap-2">
@@ -59,7 +59,7 @@ export default function Cart() {
                       </div>
                     </div>
                     <div className="md:col-span-2 text-center font-semibold text-gray-800">
-                      ${(item.price * item.quantity).toFixed(2)}
+                     {(item.price * item.quantity).toFixed(2)}
                     </div>
                   </div>
                 ))}
@@ -73,16 +73,16 @@ export default function Cart() {
                 <div className="space-y-3 mb-4">
                   <div className="flex justify-between">
                     <span className="text-gray-600">Subtotal</span>
-                    <span className="text-gray-800">${subtotal.toFixed(2)}</span>
+                    <span className="text-gray-800">{subtotal.toFixed(2)}</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-gray-600">Shipping</span>
-                    <span className="text-gray-800">${shipping.toFixed(2)}</span>
+                    <span className="text-gray-800">{shipping.toFixed(2)}</span>
                   </div>
                   <div className="border-t pt-3">
                     <div className="flex justify-between font-semibold text-lg">
                       <span>Total</span>
-                      <span className="text-pink-600">${total.toFixed(2)}</span>
+                      <span className="text-pink-600">{total.toFixed(2)}</span>
                     </div>
                   </div>
                 </div>
